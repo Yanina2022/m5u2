@@ -1,0 +1,186 @@
+
+
+
+<div class="row my-3">
+    <div id="novedades" class="col-md-3 offset-md-2 scroll_section">
+        <h2><u>Novedades Temporada Verano </u></h2>
+        <ul class="lista-novedades">
+            {{#each novedades}}
+            <li><a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#Modal{{id}}">
+                    <img src="images/camisetas.jpg">{{titulo}}
+                </a>
+            </li>
+            {{/each}}
+            <li><a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#Modal">
+                    <img src="images/sacos.png">Sacos
+                </a>
+            </li>
+            <li><a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#Modal">
+                    <img src="images/camisetas.jpg">Camisetas
+                </a>
+            </li>
+            <li><a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#Modal">
+                    <img src="images/pantalones.jpg"> Pantalones
+                </a>
+            </li>
+            <li><a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#Modal">
+                    <img src="images/accesorios.jpg"> Accesorios
+                </a>
+            </li>
+            </li>
+            <li><a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#Modal">
+                    <img src="images/blusa.jpg">Blusas
+                </a>
+            </li>
+            <li><a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#Modal">
+                    <img src="images/remera.jpg">Remeras
+                </a>
+            </li>
+            <li><a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#Modal">
+                    <img src="images/musculosa.jpg">Musculosas
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+    {{#each novedades}}
+    <div class="modal fade" id="Modal{{id}}" data-backdrop="static" data-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class=" modal-title" id="staticBackdropLabel">{{titulo}}</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h2>{{subtitulo}}</h2>
+                    <p>{{cuerpo}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{/each}}
+</div>
+<div class="col-md-3 my-3">
+    <div class="rounded py-5 testimonios">
+        <h2 class="text-center"><u>Testimonios</u></h2>
+
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/testimonio1.jpg" class="d-block w-100" alt="testimonio1">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/chicas2.jpg" class="d-block w-100" alt="testimonio2">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/chicas3.jpg" class="d-block w-100" alt="testimonio3">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/chicas4.jpg" class="d-block w-100" alt="testimonio4">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/chicas5.jpg" class="d-block w-100" alt="testimonio5">
+
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="testimonio">
+                    <h2>La indumentaria mas linda!</h2>
+
+                </div>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="testimonio">
+
+                        <h2>Los mejores precios de la zona!</h2>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="card mb-3" style="max-width: 540px;">
+    <div class="row g-0">
+        <div class="col-md-4">
+            <img src="images/señoragrande.jpg" class="img-fluid rounded-start" alt="señoragrande">
+        </div>
+        <div class="col-md-8">
+            <div class="card-body">
+                <h5 class="card-title">Historia</h5>
+                <p class="card-text">
+                    Nuestra tienda fue inaugurada en el 2010 tras la pandemia, por nuestra abuela Irma,ella nos ha
+                    dejado esta maravillosa tienda de indumentaria</p>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="card mb-3" style="max-width: 540px;">
+    <div class="row g-0">
+        <div class="col-md-4">
+            <img src="images/nosotras.jpg" class="img-fluid rounded-start" alt="nosotros">
+        </div>
+        <div class="col-md-8">
+            <div class="card-body">
+                <h5 class="card-title"><u>Nosotros</u></h5>
+                <p class="card-text">Somos tres hermanas a cargo de esta hermosa tienda de ropa la cual amamos</p>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div id="Conocenos" class="row py-4">
+    <div class="col.md-4 offset-md-2">
+        <h2><u>Visitanos</u></h2>
+        <div class="mapa">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26295.069469523536!2d-58.7358508891601!3d-34.5311748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbd18e2f81c85%3A0x94e20c761e64a503!2sGRID%20-%20Terrazas%20de%20Mayo!5e0!3m2!1ses-419!2sar!4v1695940737125!5m2!1ses-419!2sar"></iframe>
+        </div>
+    </div>
+</div>
+<div class="col-md-4 mt-4 mt-sm-0">
+    <h2><u>Contactanos</u></h2>
+    <form class="row g-3" action="/" method="post">
+        <div class="col-md-6">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombre" name="nombre">
+        </div>
+        
+        <div class="col-12">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="email@email.com" name="email">
+        </div>
+        <div class="col-12">
+            <label for="tel" class="form-label">Telefono</label>
+            <input type="text" class="form-control" id="tel" placeholder="..." name="tel">
+        </div>
+        <div class="col-12">
+            <label for="mensaje" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="mensaje" rows="3" name="mensaje">
+            </textarea>
+        </div>
+        <div class="col-12">
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </div>
+    </form>
+    <p>{{{message}}}</p>
+</div>
